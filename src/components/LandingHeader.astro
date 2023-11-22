@@ -1,0 +1,31 @@
+---
+import Logo from "./Logo.astro";
+
+---
+<header class=" py-6 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-white ">
+
+<div class=" flex flex-grow justify-start basis-0">
+    <Logo />
+</div>
+
+<nav>
+    <ul class=" text-white flex text-sm [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
+        <li><a href="#">Venzo</a></li>
+        <li><a href="#">SLP</a></li>
+        <li><a href="#">Zion</a></li>
+        <li><a href="#">Trek</a></li>
+        <li><a href="#">FireBird</a></li>
+        <li><a href="#">Olmo</a></li>
+    </ul>
+</nav>
+
+<nav class=" text-white flex flex-grow justify-end basis-0">
+    <ul class="flex text-sm [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
+        <li><a href="#">Accesorios</a></li>
+        <li><a href="#">Tienda</a></li>
+        <li><a href="#">Cuenta</a></li>
+        <li><a href="#">Menu</a></li>
+    </ul>
+</nav>
+
+</header>
