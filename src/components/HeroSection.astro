@@ -1,25 +1,26 @@
-<section class="landing-section bg-black h-screen w-screen text-center relative overflow-hidden " data-header-color="white"> 
-			
-    <div class=" z-30 relative h-full flex flex-col">
-        
-        <header > 
-            
-            <h2 class=" text-white pt-40 text-[40px] font-medium " >Disfrute la montaña</h2>
-            <p class=" text-white text-sm" >Encargue su MountainBike hoy mismo</p>
-        </header>
+---
+import Section from "./Section.astro"
+---
 
-        <footer class=" flex flex-col flex-grow justify-end pb-24">
-            <div>
-            <a  class=" border-[3px] border-white bg-white/5 backdrop-blur-sm text-sm text-white  rounded px-6 py-2 inline-block font-medium hover:bg-white hover:text-black transition-colors" href="#">Encargue su MountainBike</a>
-        </div>
-        </footer>
-    </div>
+<Section
+  title="Disfrute la Montaña"
+  subtitle="Encargue su Bicicleta Todo Terreno"
+  color="white"
+>
+  <div slot="footer">
+    <a
+      class="border-[3px] border-white bg-white/5 backdrop-blur-sm text-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+      href="#"
+    >
+      Encargar Mountain Bike</a
+    >
+  </div>
 
-
-    <div class=" absolute top-0 bottom-0 h-full w-full z-10">
-        <video class=" object-center object-cover h-full w-full " autoplay muted loop src="/video.webm">
-
-    </div>
-
-
-</section>
+  <video
+    slot="background"
+    class="object-center object-cover h-full w-full"
+    autoplay
+    muted
+    loop
+    src="/video.webm"></video>
+</Section>
